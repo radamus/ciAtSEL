@@ -2,3 +2,12 @@ language: node_js
 node_js:
 - '0.11'
 - '0.10'
+deploy:
+  provider: s3
+  access_key_id: AKIAJRJFYD64JIVPLKWQ
+  secret_access_key:
+    secure: w91g8FfBewZLfe7Afw7ZThv5Tbo1W58+qKBMULvDGTnTtp1kNtmuUrKDjJNVd6MORyyTfG8uopZv+sr159sNuABOuksspBQyNgK4oOc0PdEkLg6F6qCS+gdZchkdMULA76clbhXFWDqUK83YUAx+QHa9VuAQ/eurTvxRo0q95Hc=
+  bucket: deploy-weeia
+  upload-dir: se
+  on:
+    repo: radamus/ciAtSEL
